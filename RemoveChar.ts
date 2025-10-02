@@ -18,7 +18,7 @@ function removeChar1(str: string | null, deletedChar: string | null) {
     return;
   }
   let newString: string = "";
-  newString = str.replaceAll(deletedChar, "");
+  newString = str.split(deletedChar).join("");
   console.log(newString);
 }
 
